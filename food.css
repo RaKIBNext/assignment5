@@ -1,0 +1,94 @@
+body {
+    scroll-behavior: smooth;
+}
+
+#food-item {
+    margin: 50px auto;
+    width: 80%;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    text-align: center;
+}
+
+.food-container {
+    height: 300px;
+    background-color: lightgray;
+    border: 1px solid seashell;
+    border-radius: 10px;
+    box-shadow: 10px 10px 40px white;
+}
+
+.button {
+    width: 100px;
+    padding: 5px;
+    font-weight: 700;
+    color: white;
+    background-color: teal;
+    border-radius: 20px;
+}
+
+.inputDiv {
+    margin: 50px auto;
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.input-stye {
+    width: 300px;
+}
+
+.food-name img {
+    width: 200px;
+    border-radius: 20px;
+}
+
+.text-style {
+    font-weight: 700;
+}
+
+
+/* .food-info {
+    display: none;
+} */
+
+#details-image {
+    background-color: lightseagreen;
+    margin: 10px auto;
+    /* position: absolute; */
+    /* top: 50%; */
+    /* left: 50%; */
+    /* transform: translate(-50%); */
+    padding: 20px;
+    width: 500px;
+    height: 510px;
+    border-radius: 20px;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: none;
+}
+
+.close {
+    /* padding: 2px; */
+    position: absolute;
+    top: 5px;
+    right: 14px;
+    font-size: 30px;
+    /* transform: rotate(45deg); */
+    border-radius: 5px;
+}
+
+.click-image {
+    position: relative;
+    left: 70px;
+}
+
+.click-image img {
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+}
