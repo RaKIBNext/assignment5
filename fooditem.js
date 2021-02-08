@@ -12,6 +12,7 @@ function displayFoods() {
     const foodList = document.getElementById("food-item");
     const FoodItem = data => {
         console.log(data);
+        foodList.innerHTML = '';
         data.meals.forEach(food => {
             const div = document.createElement("div");
             div.className = 'food-name';
@@ -64,77 +65,3 @@ const foodDetails = idMeal => {
         `;
     }
 }
-
-
-
-
-
-
-
-// fetch('https://www.themealdb.com/api/json/v1/1/filter.php?i=chicken_breast')
-//     .then(res => res.json())
-//     .then(data => FoodItem(data))
-
-
-// const foodList = document.getElementById("food-item");
-// const FoodItem = data => {
-//     console.log(data.meals);
-//     data.meals.forEach(food => {
-//         const div = document.createElement("div");
-//         div.className = 'food-name';
-//         const mealsInfo = `
-//             <div class="div-Image"><img src=${food.strMealThumb}></div>
-//             <p class="text-style">${food.strMeal}</p>
-//             `;
-
-//         div.innerHTML = mealsInfo;
-//         foodList.appendChild(div);
-//     });
-// }
-
-// function FoodItem(data) {
-//     console.log(data.meals);
-//     data.meals.forEach(food => {
-//         const div = document.createElement("div");
-//         div.className = 'food-name';
-//         const mealsInfo = `
-//             <div class="div-Image"><img src=${food.strMealThumb}></div>
-//             <p class="text-style">${food.strMeal}</p>
-//             `;
-
-//         div.innerHTML = mealsInfo;
-//         foodList.appendChild(div);
-//     });
-
-// }
-
-// for (let i = 0; i < data.meals.length; i++) {
-//     const name = data.meals[i];
-//     const food = name.strMeal;
-//     const div = document.createElement("div");
-//     div.className = 'food-name';
-//     const mealsInfo = `
-//     <div class="div-Image"><img src=${name.strMealThumb}></div>
-//     <p class="text-style">${name.strMeal}</p>
-//     `;
-
-//     div.innerHTML = mealsInfo;
-//     foodList.appendChild(div);
-
-
-// }
-// console.log(data.meals)
-
-// for (let i = 0; i < data.meals.length; i++) {
-//     const name = data.meals[i];
-//     const food = name.strMeal;
-//     console.log(food);
-
-// }
-// <>${foodInfo.strIngredient2}</>
-// <li>${foodInfo.strIngredient3}</li>
-// <li>${foodInfo.strIngredient4}</li>
-// <li>${foodInfo.strIngredient5}</li>
-// <li>${foodInfo.strIngredient6}</li>
-// <li>${foodInfo.strIngredient7}</li>
-// </ul>
